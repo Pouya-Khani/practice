@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description" class="description">please fill out the following form for our website improvement.</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-parts">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="form-input" placeholder="Enter your name" required>
+        </div>
+        <div class="form-parts">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-parts">
+            <label id="number-label" for="Age">Age (optional)</label>
+            <input type="number" name="age" id="number" min="7" max="100" class="form-input" placeholder="Age">
+        </div>
+        <div class="form-parts">
+            <p>How did you find us?</p>
+            <select id="dropdown" class="form-input" name="Find-Us" required>
+                <option hidden selected value>Choose an option</option>
+                <option value="Friend-Family">Friend / Family</option>
+                <option value="social-media">social media</option>
+                <option value="Searching">Searching</option>
+                <option value="Email">Email</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div class="form-parts">
+            <p>How would you rate us?</p>
+            <label><input type="radio" name="rate" value="1" class="radio-input"> "1/5" </label>
+            <label><input type="radio" name="rate" value="2" class="radio-input"> "2/5" </label>
+            <label><input type="radio" name="rate" value="3" class="radio-input"> "3/5" </label>
+            <label><input type="radio" name="rate" value="4" class="radio-input"> "4/5" </label>
+            <label><input type="radio" name="rate" value="5" class="radio-input"> "5/5" </label>
+        </div>
+          <div class="form-parts">
+            <p>What is the best thing about our website?</p>
+            <label>
+                <input type="checkbox" value="Design" name="Features" class="checkbox-input">
+                Design</label>
+              <br>
+              <label>
+                <input type="checkbox" value="Tutorials" name="Features" class="checkbox-input">
+                Tutorials</label>
+              <br>
+              <label>
+                <input type="checkbox" value="Certifications" name="Features" class="checkbox-input" >
+                Certifications</label>
+              <br>
+              <label>
+                <input type="checkbox" value="Front-End-Projects" name="Features" class="checkbox-input">
+                Front-End Projects</label>
+              <br>
+              <label>
+                <input type="checkbox" value="Back-End-Projects" name="Features" class="checkbox-input">
+                Back-End Projects</label>
+              <br>
+              <label>
+                <input type="checkbox" value="Videos" name="Features" class="checkbox-input">
+                Videos</label>
+              <br>
+              <label>
+                <input type="checkbox" value="Others" name="Features" class="checkbox-input">
+                Others</label>
+          </div>
+          <div class="form-parts">
+            <p>Your honest opinion can help us improve.</p>
+          <textarea class="textarea"  placeholder="Enter your comment here..."></textarea>
+          </div>
+          <div class="form-parts">
+            <button type="submit" id="submit" class="submit">
+                Submit
+            </button>
+          </div>
+    </form>
+</div>
+</body>
+</html>
