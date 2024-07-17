@@ -42,7 +42,7 @@ console.log(jonas.__proto__ === Person.prototype);
 
 console.log(Person.prototype.isPrototypeOf(jonas)); //True
 console.log(Person.prototype.isPrototypeOf(matilda)); //True
-console.log(Person.prototype.isPrototypeOf(Person));
+console.log(Person.prototype.isPrototypeOf(Person)); //False
 
 // .prototypeOfLinkedObjects
 
