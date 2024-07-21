@@ -27,9 +27,9 @@ class App {
   _getPosition() {
     if (navigator.geolocation)
       navigator.geolocation.getCurrentPosition(
-        this._loadMap().bind(this),
+        this._loadMap.bind(this),
         function () {
-          alert(`Couldn't get the Location`);
+          alert("Could not get your position");
         }
       );
   }
