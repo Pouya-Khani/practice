@@ -14,7 +14,7 @@ body {
 	color: #555;
 	background-color: #f7f7f7;
 	min-height: 100vh;
-	margin-top: 20px;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -28,7 +28,7 @@ body {
 
 .countries {
 	/* margin-bottom: 8rem; */
-	display: block;
+	display: flex;
 
 	font-size: 2rem;
 	opacity: 0;
